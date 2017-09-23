@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.43\dat\en_msgs.txt -cs \
   -h+dist/default/production\upLabOne.X.production.sym \
   --cmf=dist/default/production\upLabOne.X.production.cmf -z -Q18F452 \
-  -oC:\Users\qmari\AppData\Local\Temp\s28k.2 \
+  -oC:\Users\qmari\AppData\Local\Temp\s8fc.2 \
   -Mdist/default/production/upLabOne.X.production.map -E1 -ver=XC8 \
   -ASTACK=080h-05ffh -pstack=STACK -ACODE=00h-03FFFhx2 -ACONST=00h-07FFFh \
   -ASMALLCONST=0600h-06FFhx122 -AMEDIUMCONST=0600h-07FFFh -ACOMRAM=01h-07Fh \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\qmari\AppData\Local\Temp\s28k.obj \
+  C:\Users\qmari\AppData\Local\Temp\s8fc.obj \
   dist/default/production\upLabOne.X.production.obj 
 
 Object code version is 3.11
@@ -34,7 +34,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\qmari\AppData\Local\Temp\s28k.obj
+C:\Users\qmari\AppData\Local\Temp\s8fc.obj
                 text                               3FBC     3FBC        2     1FDE       0
                 init                                  2        2        4        0       0
                 reset_vec                             0        0        2        0       0
@@ -135,6 +135,9 @@ UNUSED ADDRESS RANGES
 
 _PORTB                                                           (abs)        000F81
 _TRISB                                                           (abs)        000F93
+__CFG_LVP$OFF                                                    (abs)        000000
+__CFG_OSC$HS                                                     (abs)        000000
+__CFG_WDT$OFF                                                    (abs)        000000
 __HRAM                                                           (abs)        000000
 __Habs1                                                          abs1         000000
 __Hbank0                                                         bank0        000000
@@ -261,7 +264,7 @@ ___rparam_used                                                   (abs)        00
 ___sp                                                            stack        000000
 __accesstop                                                      (abs)        000080
 __activetblptr                                                   (abs)        000000
-__cntErrataNOP_C:\Users\qmari\AppData\Local\Temp\s28k.obj        (abs)        000001
+__cntErrataNOP_C:\Users\qmari\AppData\Local\Temp\s8fc.obj        (abs)        000001
 __cntErrataNOP_dist/default/production\upLabOne.X.production.obj (abs)        000003
 __end_of__initialization                                         cinit        003FC2
 __end_of_main                                                    text0        003FFE
@@ -291,7 +294,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 8 in file "lab1.c"
+		line 13 in file "lab1.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type

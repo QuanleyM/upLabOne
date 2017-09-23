@@ -23,16 +23,16 @@
 [v ___flmul __flmul `(d  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.43\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
-"8 C:\Users\qmari\OneDrive\Source Code\Assembly\MPLABx\upLabOne.X\lab1.c
+"13 C:\Users\qmari\OneDrive\Source Code\Assembly\MPLABx\upLabOne.X\lab1.c
 [v _main main `(v  1 e 1 0 ]
 "195 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f452.h
 [v _PORTB PORTB `VEuc  1 e 1 @3969 ]
 "1406
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-"6 C:\Users\qmari\OneDrive\Source Code\Assembly\MPLABx\upLabOne.X\lab1.c
+"11 C:\Users\qmari\OneDrive\Source Code\Assembly\MPLABx\upLabOne.X\lab1.c
 [v _i i `i  1 e 2 0 ]
-"8
+"13
 [v _main main `(v  1 e 1 0 ]
 {
-"14
+"19
 } 0

@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC18 LITE Macro Assembler V1.43 build -156212558 
-                                                                                               Sat Sep 23 15:35:53 2017
+                                                                                               Sat Sep 23 15:48:17 2017
 
 Microchip Technology Omniscient Code Generator v1.43 (Free mode) build 201707250354
      1                           	processor	18F452
@@ -61,7 +61,7 @@ Microchip Technology Omniscient Code Generator v1.43 (Free mode) build 201707250
     47  0000                     _TRISB	set	3987
     48                           
     49                           ; #config settings
-    50                           
+    50  0000                     
     51                           	psect	cinit
     52  003FBE                     __pcinit:
     53                           	opt stack 0
@@ -97,7 +97,7 @@ Microchip Technology Omniscient Code Generator v1.43 (Free mode) build 201707250
     83 ;;
     84 ;; *************** function _main *****************
     85 ;; Defined at:
-    86 ;;		line 8 in file "lab1.c"
+    86 ;;		line 13 in file "lab1.c"
     87 ;; Parameters:    Size  Location     Type
     88 ;;		None
     89 ;; Auto vars:     Size  Location     Type
@@ -130,17 +130,17 @@ Microchip Technology Omniscient Code Generator v1.43 (Free mode) build 201707250
    116                           	opt stack 0
    117  003FC8  FFFF               	dw	65535	; assembler added errata NOP
    118                           
-   119                           ;lab1.c: 9: TRISB = 0xF0;
+   119                           ;lab1.c: 14: TRISB = 0xF0;
    120                           
    121                           ;incstack = 0
    122  003FCA  0EF0               	movlw	240
    123  003FCC  6E93               	movwf	3987,c	;volatile
    124                           
-   125                           ;lab1.c: 10: PORTB = 0;
+   125                           ;lab1.c: 15: PORTB = 0;
    126  003FCE  0E00               	movlw	0
    127  003FD0  6E81               	movwf	3969,c	;volatile
    128                           
-   129                           ;lab1.c: 11: for (i = 0; i < 15 ; i++){
+   129                           ;lab1.c: 16: for (i = 0; i < 15 ; i++){
    130  003FD2  0E00               	movlw	0
    131  003FD4  6E02               	movwf	_i+1,c
    132  003FD6  0E00               	movlw	0
@@ -158,7 +158,7 @@ Microchip Technology Omniscient Code Generator v1.43 (Free mode) build 201707250
    144  003FEE                     l11:
    145  003FEE  FFFF               	dw	65535	; assembler added errata NOP
    146                           
-   147                           ;lab1.c: 12: PORTB = i + 1;
+   147                           ;lab1.c: 17: PORTB = i + 1;
    148  003FF0  2801               	incf	_i,w,c
    149  003FF2  6E81               	movwf	3969,c	;volatile
    150  003FF4  4A01               	infsnz	_i,f,c
@@ -268,12 +268,15 @@ CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V1.43 build -156212558 
-Symbol Table                                                                                   Sat Sep 23 15:35:53 2017
+Symbol Table                                                                                   Sat Sep 23 15:48:17 2017
 
                                                               _i 0001  
                                                              l11 3FEE  
                                                              l13 3FFA  
+                                                    __CFG_OSC$HS 000000  
                                                             l637 3FDA  
+                                                   __CFG_LVP$OFF 000000  
+                                                   __CFG_WDT$OFF 000000  
                                                            _main 3FC8  
                                                            start 0002  
                                                    ___param_bank 000000  

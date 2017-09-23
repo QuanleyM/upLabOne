@@ -3286,7 +3286,12 @@ extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupport
 extern int sprintf(char *, const char *, ...);
 extern int printf(const char *, ...);
 
-# 6 "lab1.c"
+
+# 7 "lab1.c"
+#pragma config OSC = HS
+#pragma config WDT = OFF
+#pragma config LVP = OFF
+
 int i = 0;
 
 void main (void){

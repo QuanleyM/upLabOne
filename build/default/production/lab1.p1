@@ -2370,46 +2370,52 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdio.h: 190: extern int vsscanf(const char *, const char *, va_list) __attribute__((unsupported("vsscanf() is not supported by this compiler")));
 [; ;stdio.h: 194: extern int sprintf(char *, const char *, ...);
 [; ;stdio.h: 195: extern int printf(const char *, ...);
-"6 lab1.c
+"7 lab1.c
+[p x OSC=HS ]
+"8
+[p x WDT=OFF ]
+"9
+[p x LVP=OFF ]
+"11
 [v _i `i ~T0 @X0 1 e ]
 [i _i
 -> 0 `i
 ]
-[; ;lab1.c: 6: int i = 0;
+[; ;lab1.c: 11: int i = 0;
 [v $root$_main `(v ~T0 @X0 0 e ]
-"8
+"13
 [v _main `(v ~T0 @X0 1 ef ]
 {
-[; ;lab1.c: 8: void main (void){
+[; ;lab1.c: 13: void main (void){
 [e :U _main ]
 [f ]
-[; ;lab1.c: 9: TRISB = 0xF0;
-"9
+[; ;lab1.c: 14: TRISB = 0xF0;
+"14
 [e = _TRISB -> -> 240 `i `uc ]
-[; ;lab1.c: 10: PORTB = 0;
-"10
+[; ;lab1.c: 15: PORTB = 0;
+"15
 [e = _PORTB -> -> 0 `i `uc ]
-[; ;lab1.c: 11: for (i = 0; i < 15 ; i++){
-"11
+[; ;lab1.c: 16: for (i = 0; i < 15 ; i++){
+"16
 {
 [e = _i -> 0 `i ]
 [e $ < _i -> 15 `i 235  ]
 [e $U 236  ]
 [e :U 235 ]
 {
-[; ;lab1.c: 12: PORTB = i + 1;
-"12
+[; ;lab1.c: 17: PORTB = i + 1;
+"17
 [e = _PORTB -> + _i -> 1 `i `uc ]
-"13
+"18
 }
-"11
+"16
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 15 `i 235  ]
 [e :U 236 ]
-"13
+"18
 }
-[; ;lab1.c: 13: }
-[; ;lab1.c: 14: }
-"14
+[; ;lab1.c: 18: }
+[; ;lab1.c: 19: }
+"19
 [e :UE 234 ]
 }

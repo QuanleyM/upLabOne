@@ -59,11 +59,11 @@ __LnvFARRAM 0 0 FARRAM 0
 __Hdata 0 0 ABS 0
 __Ldata 0 0 ABS 0
 stackhi 5FF 0 ABS 0
-__cntErrataNOP_C:\Users\qmari\AppData\Local\Temp\s28k.obj 1 0 ABS 0
 __Htemp 0 0 COMRAM 1
 __Ltemp 0 0 COMRAM 1
 stacklo 80 0 ABS 0
 __Hrbit 0 0 COMRAM 1
+__cntErrataNOP_C:\Users\qmari\AppData\Local\Temp\s8fc.obj 1 0 ABS 0
 __Lrbit 0 0 COMRAM 1
 __Hinit 6 0 CODE 0
 __Linit 2 0 CODE 0
@@ -74,6 +74,7 @@ __end_of_main 3FFE 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
+__CFG_OSC$HS 0 0 ABS 0
 end_of_initialization 3FC2 0 CODE 0
 __cntErrataNOP_dist/default/production\upLabOne.X.production.obj 3 0 ABS 0
 __Hibigdata 0 0 CODE 0
@@ -150,6 +151,8 @@ intlevel3 3FBC 0 CODE 0
 start_initialization 3FBE 0 CODE 0
 __initialization 3FBE 0 CODE 0
 __activetblptr 0 0 ABS 0
+__CFG_WDT$OFF 0 0 ABS 0
+__CFG_LVP$OFF 0 0 ABS 0
 %segments
 reset_vec 0 5 CODE 0 0
 config 300000 30000D CONFIG 300000 0
@@ -161,20 +164,20 @@ text 3FBC 3FBD CODE 3FBC 0
 %locals
 dist/default/production\upLabOne.X.production.obj
 C:\Program Files (x86)\Microchip\xc8\v1.43\include\pic18f452.h
-C:\Users\qmari\AppData\Local\Temp\s28k.
-310 3FBE 0 CODE 0
-312 3FBE 0 CODE 0
-315 3FBE 0 CODE 0
-327 3FBE 0 CODE 0
-328 3FC0 0 CODE 0
-334 3FC2 0 CODE 0
-336 3FC2 0 CODE 0
-337 3FC4 0 CODE 0
+C:\Users\qmari\AppData\Local\Temp\s8fc.
+316 3FBE 0 CODE 0
+318 3FBE 0 CODE 0
+321 3FBE 0 CODE 0
+333 3FBE 0 CODE 0
+334 3FC0 0 CODE 0
+340 3FC2 0 CODE 0
+342 3FC2 0 CODE 0
+343 3FC4 0 CODE 0
 lab1.c
-8 3FC8 0 CODE 0
-9 3FCA 0 CODE 0
-10 3FCE 0 CODE 0
-11 3FD2 0 CODE 0
-12 3FF0 0 CODE 0
-11 3FF4 0 CODE 0
-14 3FFA 0 CODE 0
+13 3FC8 0 CODE 0
+14 3FCA 0 CODE 0
+15 3FCE 0 CODE 0
+16 3FD2 0 CODE 0
+17 3FF0 0 CODE 0
+16 3FF4 0 CODE 0
+19 3FFA 0 CODE 0

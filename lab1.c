@@ -1,4 +1,4 @@
-//
+//Quanley Marieatte - MicroP Lab 1
 //
 #include <p18f452.h>
 #include <stdio.h>

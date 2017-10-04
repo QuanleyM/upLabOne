@@ -10,6 +10,7 @@
 
 int i = 0;
 
+
 void main (void){
     TRISB = 0xF0;
     PORTB = 0;

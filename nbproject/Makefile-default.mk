@@ -105,7 +105,7 @@ ${OBJECTDIR}/lab1.o: lab1.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/lab1.o.d 
 	@${RM} ${OBJECTDIR}/lab1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/lab1.o   lab1.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1 -p$(MP_PROCESSOR_OPTION) -ml -oa- -Ls  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/lab1.o   lab1.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/lab1.o 
 	@${FIXDEPS} "${OBJECTDIR}/lab1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
@@ -114,7 +114,7 @@ ${OBJECTDIR}/lab1.o: lab1.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/lab1.o.d 
 	@${RM} ${OBJECTDIR}/lab1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ms -oa-  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/lab1.o   lab1.c 
+	${MP_CC} $(MP_EXTRA_CC_PRE) -p$(MP_PROCESSOR_OPTION) -ml -oa- -Ls  -I ${MP_CC_DIR}\\..\\h  -fo ${OBJECTDIR}/lab1.o   lab1.c 
 	@${DEP_GEN} -d ${OBJECTDIR}/lab1.o 
 	@${FIXDEPS} "${OBJECTDIR}/lab1.o.d" $(SILENT) -rsi ${MP_CC_DIR}../ -c18 
 	
